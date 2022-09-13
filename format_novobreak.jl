@@ -54,9 +54,9 @@ function parse_novobreak(fs::String, IO)
                     end
                 elseif svclass == "INV"
                     if strand == "5to5"
-                        println(IO, CHROM, "\t", POS, "\t", POS + 1, "\t", CHROM2, "\t", POS2, "\t", POS2 + 1, "\t", ID, "\t", pesupport, "\t", "+", "\t", "+", "\t", svclass, "\t", "NovoBreak")
-                    elseif strand == "3to3"
                         println(IO, CHROM, "\t", POS, "\t", POS + 1, "\t", CHROM2, "\t", POS2, "\t", POS2 + 1, "\t", ID, "\t", pesupport, "\t", "-", "\t", "-", "\t", svclass, "\t", "NovoBreak")
+                    elseif strand == "3to3"
+                        println(IO, CHROM, "\t", POS, "\t", POS + 1, "\t", CHROM2, "\t", POS2, "\t", POS2 + 1, "\t", ID, "\t", pesupport, "\t", "+", "\t", "+", "\t", svclass, "\t", "NovoBreak")
                     else
                         @warn "Something was wrong.  You should pay attention"
                     end
