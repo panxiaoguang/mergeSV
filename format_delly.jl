@@ -51,9 +51,9 @@ function parse_delly(fs::String, OUT)
                 end
             elseif svclass == "INV"
                 if strand == "5to5"
-                    println(OUT, CHROM, "\t", POS, "\t", POS + 1, "\t", CHROM2, "\t", POS2, "\t", POS2 + 1, "\t", ID, "\t", pesupport, "\t", "+", "\t", "+", "\t", svclass, "\t", "Delly")
-                elseif strand == "3to3"
                     println(OUT, CHROM, "\t", POS, "\t", POS + 1, "\t", CHROM2, "\t", POS2, "\t", POS2 + 1, "\t", ID, "\t", pesupport, "\t", "-", "\t", "-", "\t", svclass, "\t", "Delly")
+                elseif strand == "3to3"
+                    println(OUT, CHROM, "\t", POS, "\t", POS + 1, "\t", CHROM2, "\t", POS2, "\t", POS2 + 1, "\t", ID, "\t", pesupport, "\t", "+", "\t", "+", "\t", svclass, "\t", "Delly")
                 else
                     @warn "Something was wrong.  You should pay attention"
                 end
