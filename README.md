@@ -1,5 +1,10 @@
 # mergeSV
 
+[![under-development](https://img.shields.io/badge/state-development-blue)](https://github.com/panxiaoguang/mergeSV)
+[![julia-lang](https://img.shields.io/badge/language-julia-yellow)](https://julialang.org/)
+
+
+
 1. you can use the merged result to call chromothripsis based ShatterSeek.
 
 2. you can use the scripts to classify the BND from svaba into SVtype.
@@ -39,4 +44,6 @@ julia mergeVCF.jl --path merged --samples example/samples
 
 
 *for manta, you should firstly use their scrpts to transfer the BND into INV*
+
+**please konw that this merge scripts would not remove single-time's SV, you should remove it by yourself!**
 
